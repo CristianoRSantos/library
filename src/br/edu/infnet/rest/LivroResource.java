@@ -8,17 +8,17 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/alunos")
-public class AlunoResource {
+@Path("/livros")
+public class LivroResource {
 	
-	public AlunoResource() {
+	public LivroResource() {
 	}
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Aluno> getAlunos(){
-		List<Aluno> lista = new ArrayList<Aluno>();
-		lista.add(new Aluno("Janete"));
+	public List<Livro> getLivro(){
+		List<Livro> lista = new ArrayList<Livro>();
+		lista.add(new Livro("E o vento levou"));
 		return lista;
 	}
 

@@ -14,7 +14,7 @@ public class MyApplication extends Application {
 	public Set<Class<?>> getClasses(){
 		final Set<Class<?>> classes = new HashSet<Class<?>>();
 		classes.add(TodoResource.class);
-		classes.add(AlunoResource.class);
+		classes.add(LivroResource.class);
 		return classes;
 	}
 	
